@@ -1,0 +1,31 @@
+$black: #000000;
+$white: #FFFFFF;
+
+$gray: #ebebeb;
+$red: #f52c5b;
+$orange: #ffa05d;
+
+$yellow: #fcc21b;
+$green: #67d658;
+$teal: #58bfd6;
+$blue: #4299E1;
+$navy-blue:#2c325c;
+$indigo: #465bca;
+$purple: #a0a5d9;
+$pink: #fa4182;
+
+/* Blue */
+$blue-lightest: lighten($blue, 25%);
+$blue-lighter: lighten($blue, 15%);
+$blue-light: lighten($blue, 5%);
+$blue-dark: darken($blue, 5%);
+$blue-darker: darken($blue, 15%);
+$blue-darkest: darken($blue, 25%);
+
+/* Navy Blue */
+$navy-blue-lightest: lighten($navy-blue, 25%);
+$navy-blue-lighter: lighten($navy-blue, 15%);
+$navy-blue-light: lighten($navy-blue, 5%);
+$navy-blue-dark: darken($navy-blue, 5%);
+$navy-blue-darker: darken($navy-blue, 15%);
+$navy-blue-darkest: darken($navy-blue, 25%);

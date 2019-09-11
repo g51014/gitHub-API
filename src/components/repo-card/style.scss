@@ -1,0 +1,28 @@
+@import '../../share/color';
+
+.repoCard {
+    color: $white;
+    display: inline-flex;
+    justify-content: center;
+    margin: 15px;
+    &__Container {
+        border-radius: 20px;
+        width: 80%;
+        min-height: 500px;
+        padding: 20px;
+        background-color: $navy-blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        > h1 {
+            font-size: 1.5rem;
+        }
+        > p {
+            font-size: 0.8rem;
+        }
+        > a {
+            font-size: 0.5rem;
+        }
+    }
+}

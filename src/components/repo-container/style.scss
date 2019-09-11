@@ -1,0 +1,12 @@
+@import '../../share/color';
+
+.Repo {
+    background-color: $navy-blue-darker;
+    &__Container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+  
