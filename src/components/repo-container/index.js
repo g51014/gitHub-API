@@ -13,6 +13,13 @@ export default class Repo extends React.Component {
         }
       }
     
+      handleScroll = e => {
+        let element = e.target
+        if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+          console.log('end')
+        }
+      }
+
       componentDidMount() {
         this.state.$api.repo$.subscribe(
           data => {
@@ -26,7 +33,7 @@ export default class Repo extends React.Component {
         return (
             <div className={'Repo'}>
             {!!this.state.data ?
-              <div className={'Repo__Container container'}>
+              <div style = {{height: window.innerHeight}} onScroll = {this.handleScroll} className={'Repo__Container container'}>
                 {this.state.data.map(
                   (e, i) => <RepoCard key={i} data={e} service={this.state.$api} />
                 )}

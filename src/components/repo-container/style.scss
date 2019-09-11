@@ -3,10 +3,12 @@
 .Repo {
     background-color: $navy-blue-darker;
     &__Container {
+      background-color: $navy-blue-dark;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       flex-wrap: wrap;
+      overflow: auto;
     }
   }
   
