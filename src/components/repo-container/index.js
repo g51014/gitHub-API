@@ -16,15 +16,20 @@ export default class Repo extends React.Component {
       handleScroll = e => {
         let element = e.target
         if (element.scrollHeight - element.scrollTop === element.clientHeight) {
-          console.log('end')
+          let oldData = this.state.data;
+          this.state.data.forEach(
+            e => {
+              oldData.push(e)
+            }
+          )
+          this.setState({...this.state,...{data: oldData}})
         }
       }
 
       componentDidMount() {
         this.state.$api.repo$.subscribe(
           data => {
-            console.log(data)
-            this.setState({ ...this.state, ...{ data: data } })
+            this.setState({ ...this.state, ...{data: data} })
           }
         )
       }
