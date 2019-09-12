@@ -1,4 +1,4 @@
-###`When you first time pull this project , run npm install or yarn install first.`
+`When you first time pull this project , run npm install or yarn install first.`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
